@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="formulario">
+        <div class="formulario__ingreso">
+            <div class="formulario__user--contenido">
+                <h1>USER LOGIN</h1>
+                <form method="POST" action="logueo/validar.php">
+                    <div class="formulario__user">
+                        <i class="fas fa-user"></i>
+                        <!-- <label for="">User:</label> -->
+                        <input id="user" name="user" type="text" placeholder="Username">
+                    </div>
+                    <div class="formulario__user">
+                        <i class="fas fa-lock"></i>
+                        <!-- <label for="">Pass:</label> -->
+                        <input id="pass" name="pass" type="password" placeholder="Password" required>
+                    </div>
+                    <button class="button__enviar" type="submit">LOGIN</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+</body>
+</html>

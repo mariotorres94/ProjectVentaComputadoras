@@ -1,0 +1,241 @@
+<?php
+session_start();
+// header("Location: ../index2.html");
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../styles.css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;300;400&family=Nunito:wght@300;400;600&family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+    <title>Mi Taxi</title>
+</head>
+<body>
+    <header class="header header__contenedor">
+        <div class="header__imagen">
+            <img src="../img/Logo-Tech.png" alt="">
+        </div>
+        <nav class="header__navegacion">
+            <a href="">
+                <i class="fas fa-laptop"></i>
+                <p>Laptops</p>
+            </a>
+            <a href="">
+                <i class="fas fa-desktop"></i>
+                <p>Computadoras</p>
+            </a href="">
+            <a href="">
+                <i class="fas fa-print"></i>
+                <p>Impresoras</p>
+            </a href="">
+            <a href="">
+                <i class="fas fa-desktop"></i>
+                <p>Monitores</p>
+            </a href="">
+            <a href="">
+                <i class="fas fa-users"></i>
+                <p>Proyectos</p>
+            </a href="">
+            <a href="">
+                <i class="fas fa-briefcase"></i>
+                <p>Accesorios</p>
+            </a href="">
+            <a href="">
+                <i class="fas fa-camera"></i>
+                <p>Camara Web</p>
+            </a href="">
+            <a href="">
+                <i class="fas fa-network-wired"></i>
+                <p>Redes y Seguridad</p>
+            </a href="">
+            <a href="">
+                <i class="fas fa-gamepad"></i>
+                <p>TEC Gaming</p>
+            </a href="">
+        </nav>
+        <div class="header__user" style="text-align:center; padding-top:20px">
+            <p style="font-size:14px;font-weight:bold;font-family:cursive">
+                <?php echo "Hola ". $_SESSION['nombre']." ". $_SESSION['apellido']; ?>
+            </p>
+            <a style="margin-top:35px" href="../index.html">Salir</a>
+            <!-- <a href="./index1.html">
+                <i class="fas fa-user"></i>
+                <p>Ingresar</p>
+            </a> -->
+            <!-- <div>
+                <div class="header__user--contenido">
+                    <form method="POST" action="logueo/validar.php">
+                        <div>
+                            <i class="fas fa-user"></i>
+                            <label for="">User:</label>
+                            <input id="user" name="user" type="text">
+                        </div>
+                        <div>
+                            <i class="fas fa-lock"></i>
+                            <label for="">Pass:</label>
+                            <input id="pass" name="pass" type="password" required>
+                        </div>
+                        <div>
+                            <button type="submit">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div> -->
+        </div>
+    </header>
+    
+    <section class="contenedor padding">
+        <div class="slider__contenedor">
+            <div class="contenido__slider">
+                <img src="../img/Promocion1.png" alt="">
+            </div>
+            <div class="contenido__slider">
+                <img src="../img/Promocion2.jpg" alt="">
+            </div>
+            <div class="contenido__slider">
+                <img src="../img/Promocion3t.jpg" alt="">
+            </div>
+            <div class="contenido__slider">
+                <img src="../img/Promocion1.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="section__laptops">
+        <figure class="section__laptops--img">
+            <img src="../img/1111-300x275.jpg" alt="">
+            <div class="section__laptops--parrafos">
+                <figcaption>Laptop I5 10MA LEN S340 15IILD 81WL003VLM 1.1GHZ/8GB/1TB/15.6P/2GV</figcaption>
+                <p><span>SKU</span>:3793</p>
+                <p>S/.2,689.00</p>
+            </div>
+        </figure>
+        <figure class="section__laptops--img">
+            <img src="../img/LAP-I5-10MA-LENOVO-IDEAPAD-3-81WD00U9US-300x275.jpg" alt="">
+            <div class="section__laptops--parrafos">
+                <figcaption>Laptop I5 10MA LEN S340 15IILD 81WL003VLM 1.1GHZ/8GB/1TB/15.6P/2GV</figcaption>
+                <p><span>SKU</span>:3793</p>
+                <p>S/.2,689.00</p>
+            </div>
+        </figure>
+        <figure class="section__laptops--img">
+            <img src="../img/laptop-hp-i3-240-g7-1p7k4lt-300x275.jpg" alt="">
+            <div class="section__laptops--parrafos">
+                <figcaption>Laptop I5 10MA LEN S340 15IILD 81WL003VLM 1.1GHZ/8GB/1TB/15.6P/2GV</figcaption>
+                <p><span>SKU</span>:3793</p>
+                <p>S/.2,689.00</p>
+            </div>
+        </figure>
+        <figure class="section__laptops--img">
+            <img src="../img/Laptop-Lenovo-V14-ARE-AMD-Ryzen-7-300x275.jpg" alt="">
+            <div class="section__laptops--parrafos">
+                <figcaption>Laptop I5 10MA LEN S340 15IILD 81WL003VLM 1.1GHZ/8GB/1TB/15.6P/2GV</figcaption>
+                <p><span>SKU</span>:3793</p>
+                <p>S/.2,689.00</p>
+            </div>
+        </figure>
+        <figure class="section__laptops--img">
+            <img src="../img/Toshiba-laptop-ok-300x275.jpg" alt="">
+            <div class="section__laptops--parrafos">
+                <figcaption>Laptop I5 10MA LEN S340 15IILD 81WL003VLM 1.1GHZ/8GB/1TB/15.6P/2GV</figcaption>
+                <p><span>SKU</span>:3793</p>
+                <p>S/.2,689.00</p>
+            </div>
+        </figure>
+        <figure class="section__laptops--img">
+            <img src="../img/1111-300x275.jpg" alt="">
+            <div class="section__laptops--parrafos">
+                <figcaption>Laptop I5 10MA LEN S340 15IILD 81WL003VLM 1.1GHZ/8GB/1TB/15.6P/2GV</figcaption>
+                <p><span>SKU</span>:3793</p>
+                <p>S/.2,689.00</p>
+            </div>
+        </figure>
+        <figure class="section__laptops--img">
+            <img src="../img/LAP-I5-10MA-LENOVO-IDEAPAD-3-81WD00U9US-300x275.jpg" alt="">
+            <div class="section__laptops--parrafos">
+                <figcaption>Laptop I5 10MA LEN S340 15IILD 81WL003VLM 1.1GHZ/8GB/1TB/15.6P/2GV</figcaption>
+                <p><span>SKU</span>:3793</p>
+                <p>S/.2,689.00</p>
+            </div>
+        </figure>
+        <figure class="section__laptops--img">
+            <img src="../img/laptop-hp-i3-240-g7-1p7k4lt-300x275.jpg" alt="">
+            <div class="section__laptops--parrafos">
+                <figcaption>Laptop I5 10MA LEN S340 15IILD 81WL003VLM 1.1GHZ/8GB/1TB/15.6P/2GV</figcaption>
+                <p><span>SKU</span>:3793</p>
+                <p>S/.2,689.00</p>
+            </div>
+        </figure>
+        <figure class="section__laptops--img">
+            <img src="../img/Laptop-Lenovo-V14-ARE-AMD-Ryzen-7-300x275.jpg" alt="">
+            <div class="section__laptops--parrafos">
+                <figcaption>Laptop I5 10MA LEN S340 15IILD 81WL003VLM 1.1GHZ/8GB/1TB/15.6P/2GV</figcaption>
+                <p><span>SKU</span>:3793</p>
+                <p>S/.2,689.00</p>
+            </div>
+        </figure>
+        <figure class="section__laptops--img">
+            <img src="../img/Toshiba-laptop-ok-300x275.jpg" alt="">
+            <div class="section__laptops--parrafos">
+                <figcaption>Laptop I5 10MA LEN S340 15IILD 81WL003VLM 1.1GHZ/8GB/1TB/15.6P/2GV</figcaption>
+                <p><span>SKU</span>:3793</p>
+                <p>S/.2,689.00</p>
+            </div>
+        </figure>
+        <figure class="section__laptops--img">
+            <img src="../img/Laptop-Lenovo-V14-ARE-AMD-Ryzen-7-300x275.jpg" alt="">
+            <div class="section__laptops--parrafos">
+                <figcaption>Laptop I5 10MA LEN S340 15IILD 81WL003VLM 1.1GHZ/8GB/1TB/15.6P/2GV</figcaption>
+                <p><span>SKU</span>:3793</p>
+                <p>S/.2,689.00</p>
+            </div>
+        </figure>
+        <figure class="section__laptops--img">
+            <img src="../img/Toshiba-laptop-ok-300x275.jpg" alt="">
+            <div class="section__laptops--parrafos">
+                <figcaption>Laptop I5 10MA LEN S340 15IILD 81WL003VLM 1.1GHZ/8GB/1TB/15.6P/2GV</figcaption>
+                <p><span>SKU</span>:3793</p>
+                <p>S/.2,689.00</p>
+            </div>
+        </figure>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__contenido header">
+            <div class="footer__contacto">
+                <div class="contacto">
+                    <div class="contacto__llamenos">
+                        <img src="../icons/centro-de-llamadas.png" alt="">
+                        <div class="contacto__llamenos--informacion">
+                            <span>Llámenos 24/7</span>
+                            <p>Ventas Online: 123456789</p>
+                        </div>
+                    </div>
+                    <p>Ubicación:</p>
+                    <p>Lima, Perú</p>
+                </div>
+            </div>
+            <div class="footer__siguenos">
+                <p>Siguenos</p>
+                <div class="footer__siguenos--contenido">
+                    <div class="footer__siguenos--iconos">
+                        <img src="../icons/Facebook.png" alt="">
+                    </div>
+                    <div class="footer__siguenos--iconos">
+                        <img src="../icons/Instagram.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <script src="../main.js"></script>
+</body>
+</html>
